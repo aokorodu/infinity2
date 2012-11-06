@@ -1,0 +1,15 @@
+
+TV Shows
+
+var Featured:String = "SELECT * FROM tv WHERE newforRelevance='true' AND originalAirDate='2012-02-16' OR originalAirDate='2012-02-14'";
+var TopWatched:String = "SELECT * FROM tv";
+var TopDrama:String = "SELECT * FROM tv WHERE genre='Drama'";
+var Kids:String = "SELECT * FROM tv WHERE rating='TVG'";
+
+
+Movies
+
+var Featured:String = "SELECT * FROM movies WHERE newforRelevance='true' AND releaseYear = '2012'";
+var NewReleases:String = "SELECT * FROM movies WHERE newforRelevance='true'";
+var PremiumMovies:String = "SELECT * FROM movies WHERE hasHD='true' AND rating='r'";
+var FreeMovies:String = "SELECT * FROM movies WHERE price='Free'";
