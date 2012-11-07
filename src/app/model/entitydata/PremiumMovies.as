@@ -1,5 +1,5 @@
 //
-//  Recordings
+//  Premium Movies
 //
 //  Created by Matthew on 2012-11-04.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
@@ -27,9 +27,9 @@ package app.model.entitydata {
 		init();
 		}
 		override public function init():void{
-			var Featured:String = "SELECT parentTitle, entityType, title, p, description FROM movies WHERE newforRelevance='true' ";
+			var query:String = "SELECT parentTitle, entityType, title, p, description FROM movies WHERE newforRelevance='true' ";
 			this.title = "Premium Movies";	
-			this.getData(Featured, Entity, 12);			
+			this.getData(query, Entity, 12);			
 		}
 		
 		override public function createMap():void {

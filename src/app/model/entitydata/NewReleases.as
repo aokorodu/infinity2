@@ -1,5 +1,5 @@
 //
-//  Recordings
+//  New Releases
 //
 //  Created by Matthew on 2012-11-04.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
