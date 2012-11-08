@@ -30,7 +30,7 @@ package app.model.entitydata {
 
 			var query:String = "SELECT parentTitle, entityType, title, p, description  FROM movies WHERE newforRelevance='true'";
 			this.title = "New Releases";	
-			this.getData(query, Entity, 12);		
+			this.getData(query, Entity, 6);		
 		}
 		
 		override public function createMap():void {

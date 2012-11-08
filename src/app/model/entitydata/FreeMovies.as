@@ -28,9 +28,9 @@ package app.model.entitydata {
 		}
 		override public function init():void{
 
-			var query:String = "SELECT parentTitle, entityType, title, p, description  FROM movies WHERE newforRelevance='true'";
+			var query:String = "SELECT parentTitle, entityType, title, p, description  FROM movies WHERE price='Free'"
 			this.title = "Free Movies";	
-			this.getData(query, Entity, 12);							
+			this.getData(query, Entity, 6);							
 		}
 		
 		override public function createMap():void {
