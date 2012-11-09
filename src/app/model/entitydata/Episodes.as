@@ -50,7 +50,6 @@ package app.model.entitydata {
 			this._episodeSets[row_title] = _entityarr;
 		
 			if(!result.complete){
-					_entityarr = [];
 				selectStmt.next(6)
 			}else{this.model.episodeSets = _episodeSets /* this.model.notifyObservers();*/ }
 /*			this.model.addEpisodes(this);*/
