@@ -5,7 +5,7 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 //
-package app.view.catalog {
+package app.view.single {
 	import app.*;
 	import app.model.*;
 	import app.view.*;
@@ -23,15 +23,16 @@ package app.view.catalog {
 	import com.greensock.loading.*;
 	import com.greensock.events.LoaderEvent;
 	import com.greensock.loading.display.*;
-	 public class Catalog extends MovieClip{
+	 public class Single extends MovieClip{
 		protected var sets:Dictionary;
-		protected var catalog:Array;
-		protected var clip:MovieClip;
 		protected var rowMap:Dictionary;
-		public function Catalog(sets:Dictionary, catalog:Array) {
+		protected var clip:MovieClip;
+		protected var destinationEntity:Entity
+		
+		public function Single(sets:Dictionary, destinationEntity:Entity) {
 	 		this.sets = sets;
-			this.catalog = catalog;
 			this.clip = this;
+			this.destinationEntity = destinationEntity;
 			rowMap = new Dictionary();
 		}
 		///ABSTRACT METHOD FOR OVERRIDE

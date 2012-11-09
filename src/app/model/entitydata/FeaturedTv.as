@@ -29,7 +29,7 @@ package app.model.entitydata {
 		override public function init():void{
 			var query:String = "SELECT parentTitle, entityType, title, p, description  FROM tv WHERE newforRelevance='true' AND originalAirDate='2012-02-16' OR originalAirDate='2012-02-14'";
 			this.title = "Featured Tv";	
-			this.getData(query, Entity, 6);			
+			this.getData(query, Entity, 2);			
 		}
 		
 		override public function createMap():void {
