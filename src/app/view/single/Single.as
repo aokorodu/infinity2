@@ -24,19 +24,28 @@ package app.view.single {
 	import com.greensock.events.LoaderEvent;
 	import com.greensock.loading.display.*;
 	 public class Single extends MovieClip{
+		protected var controller:AppControl
 		protected var sets:Dictionary;
 		protected var rowMap:Dictionary;
 		protected var clip:MovieClip;
 		protected var destinationEntity:Entity
-		
-		public function Single(sets:Dictionary, destinationEntity:Entity) {
+		protected var _focus:AppButton;
+		public function Single(sets:Dictionary, destinationEntity:Entity, controller:AppControl ) {
 	 		this.sets = sets;
 			this.clip = this;
 			this.destinationEntity = destinationEntity;
 			rowMap = new Dictionary();
+			this.controller = controller;
 		}
 		///ABSTRACT METHOD FOR OVERRIDE
 		public function init():void{};
+		
+		public function set focusmem(value:AppButton){
+			this._focus = value;
+		}
+		public function get focusmem():AppButton{
+			return _focus
+		}
 
 	}
 
