@@ -1,26 +1,1 @@
-//
-//  Entity
-//
-//  Created by Matthew on 2012-11-03.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
-//
-package app.model {
-		import flash.display.MovieClip;	
-	 public class Entity {
-		public var entityType:String;
-	  	public var parentTitle:String;
-		public var title:String;
-		public var description:String;
-        public var p:String;
-		public var parentid:String;
-		public function Entity() {
-		
-		}
-
-
-
-	}
-
-};
-
+﻿////  Entity////  Created by Matthew on 2012-11-03.//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.////package app.model {		import flash.display.MovieClip;		 public class Entity {		public var entityType:String;	  	public var parentTitle:String;		public var title:String;		public var description:String;        public var p:String;		public var parentid:String;		public var recorded:Boolean;		private var _downloaded:Boolean;		private var _recent:Boolean;		private var _islive:Boolean;		public function Entity() {				}		public function set downloaded(value:Boolean):void{			this._downloaded = value;		}		public function get downloaded():Boolean{			return _downloaded;		}				public function set recent(value:Boolean):void{			this._recent = value;		}		public function get recent():Boolean{			return _recent;		}				public function set islive(value:Boolean):void{			this._islive = value;		}		public function get islive():Boolean{			return _islive;		}	}};

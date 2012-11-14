@@ -1,7 +1,7 @@
 //
-//  Featured Movies
+//  Movies
 //
-//  Created by Matthew on 2012-11-04.
+//  Created by Matthew on 2012-11-13.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 //
@@ -21,15 +21,15 @@ package app.model.entitydata {
 	import flash.events.*;
 	import flash.events.EventDispatcher;
 	import flash.events.Event
-	 public class Episodes extends EntityData{
+	 public class Movies extends EntityData{
 		private var _episodeSets:Dictionary;
-		public function Episodes(model:AppModel) {
+		public function Movies(model:AppModel) {
 		 super(model);
 		
 	
 		}
 		override public function init():void{
-			var query:String = "SELECT parentTitle, entityType, title, p, description FROM episodes WHERE parentTitle ="+model.episodes+"";
+			var query:String = "SELECT parentTitle, entityType, title, p, description FROM movies WHERE parentTitle ="+model.episodes+"";
 			this.title = "Get Episodes"
 			this.getData(query, Entity, 6);	
 			this._episodeSets = new Dictionary();		
@@ -59,4 +59,3 @@ package app.model.entitydata {
 	}
 
 };
-
