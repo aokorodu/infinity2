@@ -28,7 +28,7 @@ package app.model.entitydata {
 		}
 		override public function init():void{
 			var query:String = "SELECT parentTitle, entityType, title, p, description FROM movies WHERE recorded='true' ";
-			this.title = "Featured Movies";	
+			this.title = "Recordings";	
 			this.getData(query, Entity, 6);			
 		}
 		
