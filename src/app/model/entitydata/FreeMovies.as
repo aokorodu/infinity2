@@ -30,7 +30,7 @@ package app.model.entitydata {
 
 			var query:String = "SELECT title, episode_title, season_number, episode_number, short_synopsis, type, runtime2, genre, rating, network, year, price, img_poster, img_poster_big, img_long, actors, is_adult, is_cc, is_hd, is_samedaydvd, user_bookmarked, user_recorded, user_recordingon, user_seriesrecording, user_downloaded, user_watched, airing_time, critic_score, license_start, license_end FROM master WHERE type = 'Movie' AND (price IS NULL OR price = '0')  GROUP BY title ORDER BY year DESC";
 			this.title = "Free Movies";	
-			this.getData(query, Entity, 6);							
+			this.getData(query, Entity, 12);							
 		}
 		
 		override public function createMap():void {

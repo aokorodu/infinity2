@@ -31,7 +31,7 @@ package app.model.entitydata {
 		override public function init():void{
 			var query:String = "SELECT parentTitle, entityType, title, p, description FROM movies WHERE parentTitle ="+model.episodes+"";
 			this.title = "Get Episodes"
-			this.getData(query, Entity, 6);	
+			this.getData(query, Entity, 12);	
 			this._episodeSets = new Dictionary();		
 		}
 		
