@@ -28,7 +28,10 @@
         <fullScreen>false</fullScreen>
         <autoOrients>true</autoOrients>
         <aspectRatio>landscape</aspectRatio>
-        <renderMode>gpu</renderMode>
+        <renderMode>auto</renderMode>
+        <maximizable>true</maximizable>
+        <minimizable>true</minimizable>
+        <resizable>true</resizable>
     </initialWindow>
     <customUpdateUI>false</customUpdateUI>
     <allowBrowserInvocation>false</allowBrowserInvocation>
