@@ -23,6 +23,7 @@ package com.mhl {
 		
 		public function canvas(target:MovieClip) {
 			_backdrop = new lighting();
+			_backdrop.name = "_backdrop";
 			addChild(_backdrop);
 			_backdrop.alpha=0;
 		}
