@@ -58,7 +58,7 @@ package mobile.view {
 			this._search = _primaryNav._search;
 			
 			this._secondaryNav = _primaryNav._secondaryNav;
-			this._close = _secondaryNav._close;
+	/*		this._close = _secondaryNav._close;*/
 			this._subGuide = _primaryNav._secondaryNav._subGuide;
 			this._subSaved = _primaryNav._secondaryNav._subSaved;
 			this._subSearch = _primaryNav._secondaryNav._subSearch;
@@ -83,7 +83,7 @@ package mobile.view {
 		}
 	 public function resetNavigation():void{
 			
-			this._close.visible = false;
+		/*	this._close.visible = false;*/
 			_primaryNav._collapse.txt.text = "Menu";
 	
 	}
@@ -123,7 +123,7 @@ package mobile.view {
 			// show seconary navigation options in chrome
 			var sub = "_sub"+availbleSections[i].title
 			this[sub].visible = true;
-			this._close.visible = true;
+		/*	this._close.visible = true;*/
 			
 	
 			}else{
